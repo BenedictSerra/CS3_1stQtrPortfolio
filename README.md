@@ -1,4 +1,4 @@
-# CS3_1stQtrPortfolio_Serra
+# CS3_1stQtrPortfolio_SERRA
 
 ![Portfolio](https://wiztoonz.com/wp-content/uploads/2022/04/Blog-Post-Portfolio.jpg)
 
