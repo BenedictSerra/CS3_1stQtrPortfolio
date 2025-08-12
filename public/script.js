@@ -11,11 +11,11 @@ if(confirm(`Are the values you entered for your age, max age and buldak really t
 }
 
 else {
-    document.write("Run the code again >:(")
+    console.log("Please re-enter correct values")
 }
 
 
 totalRequired = (numPerDay * 365) * (maxAge - age);
 
 //document.write("You will need " + totalRequired + " packs of buldak to last you until the ripe old age of " + maxAge); 
-
+alert(`You will need ${totalRequired} Buldak to last you to the ripe old age of ${maxAge}`);
