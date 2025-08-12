@@ -11,7 +11,7 @@ if(confirm(`Are the values you entered for your age, max age and buldak really t
 }
 
 else {
-    document.write("Run the code again >:("))
+    document.write("Run the code again >:(")
 }
 
 
