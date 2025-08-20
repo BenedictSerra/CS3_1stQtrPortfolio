@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <body>
+
+        <h2> Q1 2nd Graded Exercise submitted by Benedict Serra of Beryllium </h2>
+
+        <label>
+        
+      
+        Meal Price: <input id = "Meal"> <br> </br>
+        Tip: <input id = "Tip"> <br> </br>
+        Service Charge: <input id = "Service"> <br> </br>
+        
+       
+    
+        </label>
+
+        <button onclick="totalMeal()">Accept Input</button> <br> <br>
+
+        <label> Total Meal: </label>
+       
+        <p id=output></p>
+       
+       <script>
+       
+       function totalMeal() {
+            let mealPrice = parseFloat(document.getElementById("Meal").value);
+            let tip = parseFloat(document.getElementById("Tip").value);
+            let serviceCharge = parseFloat(document.getElementById("Service").value);
+
+            if (isNaN(mealPrice) || isNaN(tip) || isNaN(serviceCharge)) {
+                alert("Enter A valid number please.");
+                return;
+            }
+
+            let total = ((mealPrice + tip + (serviceCharge / 100 * mealPrice)).toFixed(2));
+            document.write(`Your total is ${total}`)
+
+        }
+        </script>
+
+</body>
+</html>
