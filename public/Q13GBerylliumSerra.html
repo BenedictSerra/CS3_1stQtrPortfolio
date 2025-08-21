@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <body>
+
+        <h2> Q1 3rd Graded Exercise submitted by Benedict Serra of Beryllium </h2>
+
+        <label>
+            Guess the number: ****  <br> </br>
+            The number is from 1 to 100 <br> </br>
+            Enter your guess: <input id = "Number"> <br> <br>
+        </label>
+        
+        
+
+        <button onclick="CheckIt()">Check It</button> <br> <br>
+
+        
+        
+        <label> Result: </label>
+        <p id=output></p>
+        
+        <script>
+
+            var dNumber = Math.floor(Math.random() * 100) + 1;
+            console.log(dNumber)
+        
+            function CheckIt() {
+        
+                var Guess = parseInt(document.getElementById("Number").value);
+
+                if (isNaN(Guess) || (Guess > 100) || (Guess < 1)) {
+                    output.textContent = "Result: Enter a valid number please. The number should be an integer in the range 1 > x > 100." 
+            
+                }
+
+                else if (Guess == dNumber)  {
+                    output.textContent = "Nice One! You got it. " + dNumber + " is the number!"
+                    //alert("CORRECT")
+                }
+
+                else if (Guess > dNumber) {
+                    output.textContent = "The number is lower"
+                }
+
+                else if (Guess < dNumber) {
+                    output.textContent = "The number is higher"
+                }
+        }
+     
+        
+
+       
+       
+        </script>
+
+    </body>
+</html>
